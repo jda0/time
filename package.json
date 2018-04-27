@@ -1,0 +1,17 @@
+{
+  "name": "awin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "active-win": "^3.0.0",
+    "colors": "^1.2.1",
+    "desktop-idle": "^1.1.1",
+    "moment": "^2.22.1"
+  }
+}
