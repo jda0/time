@@ -3,8 +3,6 @@ const activeWin = require('active-win')
 const colors = require('colors')
 const moment = require('moment')
 
-const MAX_INTERVAL = 60000
-
 let aLast = ''
 let tLast = 0
 let tUpdate = null
@@ -18,7 +16,7 @@ const next = () => {
     activeWin().then(w => {
       update(w.owner.name);
 
-      handle = setTimeout(next, Math.min(tLast - 500, 60000))
+      // handle = setTimeout(next, Math.min(tLast - 500, 60000))
     })
   // }
 }
@@ -42,5 +40,4 @@ const update = (a) => {
   }
 }
 
-let handle
-next()
+setInterval(next, 1000)
